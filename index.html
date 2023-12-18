@@ -7,23 +7,47 @@
     <title>Document</title>
 </head>
 <style>
+    .babana{
+
+    }
+
+    .bab{
+        width: 100%;
+        height: auto;
+        position: relative;
+        max-width: 100px;
+        animation-name: bab_animacio;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+
+    }
+
     @keyframes bab_animacio {
+        0%{left: 0px; bottom: 0px; rotate: 0deg;}
+        100%{left: 220px; bottom: 120px; rotate: 720deg;}
+
         
+        
+    }
+
+    img{
+
+        width: 100%;
+        height: auto;
     }
 
     .monke{
-        max-width: 400px;
-    }
-    .bab{
-        max-width: 100px;
-        animation: bab_animacio  2s timing-function delay 3 direction fill-mode;
-        
-
+        width: 100%;
+        height: auto;
     }
 </style>
 <body>
+
     <img src="./ezgif-3-e845b3e46b.jpg" alt="" class="monke">
-    <img src="./letöltés.jpg" alt="" class="bab">
+    <div class="bab"><img src="./letöltés.jpg" alt="" class="babana">
+    </div>
 </body>
 
 </html>
